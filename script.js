@@ -11,11 +11,11 @@ const divide = (arr, n) => {
 			sum+=ele;
 		}else{
 			result.push(temp);
-			sum=arr[j];
-			temp=[arr[j]];
+			sum=ele;
+			temp=[ele];
 		}
 	}
-	result[i]=temp;
+	result.push(temp);
 	return result;
 };
 
